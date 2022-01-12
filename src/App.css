@@ -1,38 +1,141 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  background: linear-gradient(to right bottom, #4685fa, #b64d4d);
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 8px 10px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  margin: 1.5rem 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-items: center;
+}
+
+.input > h2 {
+  display: inline;
+}
+
+.result {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.bg-green {
+  background: rgba(0, 128, 0, 0.3);
+}
+
+.bg-yellow {
+  background: rgba(255, 255, 0, 0.3);
+}
+
+.bg-red {
+  background: rgba(255, 0, 0, 0.3);
+}
+
+input {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  height: 1.7rem;
+  width: 10rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.input-in {
+  width: 3.8rem;
+}
+
+.input-meter {
+  margin-right: -4px;
+}
+
+.mesures {
+  color: #fff;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn-radio {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-radio > input {
+  margin-left: 20px;
+  margin-top: 7px;
+  width: 20px;
+  height: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  margin-left: 10px;
+}
+
+button {
+  margin: 1rem auto;
+  padding: 0.8rem 1.5rem;
+  border-radius: 15px;
+  border: none;
+  background: #650dad;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #f11515;
+  text-shadow: 2px 2px 5px red;
+  transition: 0.3s ease-in-out;
+  box-shadow: 2px 2px 15px red;
+}
+
+button:active {
+  transition: none;
+  box-shadow: none;
+}
+
+table {
+  border-radius: 15px;
+}
+
+th {
+  color: #fff;
+}
+
+table,
+th,
+td {
+  margin: 1.5rem auto;
+  padding: 0.4rem 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
